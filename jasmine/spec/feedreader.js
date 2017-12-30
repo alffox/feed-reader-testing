@@ -71,7 +71,16 @@ $(function() {
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
           */
-});
+          it('changes visibility when the menu icon is clicked', function() {
+            var hamburgerButton = $('.icon-list');
+
+            hamburgerButton.trigger('click')
+            expect($('body')).not.toHaveClass('menu-hidden');
+
+            hamburgerButton.trigger('click')
+            expect($('body')).toHaveClass('menu-hidden');
+        });
+      });
 
     /* TODO: Write a new test suite named "Initial Entries" */
 
