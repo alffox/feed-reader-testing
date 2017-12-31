@@ -31,8 +31,8 @@ $(function() {
          * and that the URL is not empty.
          */
         it('URLs are defined and not empty', function() {
-            for (var i = 0; i < allFeeds.length; i++) {
-                var feed = allFeeds[i];
+            for (let i = 0; i < allFeeds.length; i++) {
+                let feed = allFeeds[i];
                 expect(feed.url).toBeDefined();
                 expect(feed.url.length).not.toBe(0);
             }
@@ -44,8 +44,8 @@ $(function() {
          * and that the name is not empty.
          */
         it('names are defined and not empty', function() {
-            for (var i = 0; i < allFeeds.length; i++) {
-                var feed = allFeeds[i];
+            for (let i = 0; i < allFeeds.length; i++) {
+                let feed = allFeeds[i];
                 expect(feed.name).toBeDefined();
                 expect(feed.name.length).not.toBe(0);
             }
@@ -71,7 +71,7 @@ $(function() {
          * clicked and does it hide when clicked again.
          */
         it('changes visibility when the menu icon is clicked', function() {
-            var hamburgerButton = $('.icon-list');
+            const hamburgerButton = $('.icon-list');
 
             hamburgerButton.trigger('click')
             expect($('body')).not.toHaveClass('menu-hidden');
@@ -95,7 +95,7 @@ $(function() {
         });
 
         it('should have at least one feed', function(done) {
-            var validFeeds = $('.feed').find($('.entry'));
+            const validFeeds = $('.feed').find($('.entry'));
             expect(validFeeds.length).not.toBeLessThan(1);
             done();
         });
@@ -109,18 +109,18 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
-        var initialContent;
+        let initialContent; //the variable is declared here so that it becomes accessible in the "it" function
 
         beforeEach(function(done) {
             loadFeed(0, function() {
-                var initialContent = $('.feed').html();
+                const initialContent = $('.feed').html();
 
                 loadFeed(1, done);
             });
         });
 
         it('ensures a new feed is loaded and that the content actually changes', function(done) {
-            var updatedContent = $('.feed').html();
+            const updatedContent = $('.feed').html();
             expect(updatedContent).not.toBe(initialContent);
             done();
         });
