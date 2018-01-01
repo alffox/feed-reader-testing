@@ -94,10 +94,9 @@ $(function() {
             loadFeed(0, done);
         });
 
-        it('should have at least one feed', function(done) {
+        it('should have at least one feed', function() {
             const validFeeds = $('.feed').find($('.entry'));
-            expect(validFeeds.length).not.toBeLessThan(1);
-            done();
+            expect(validFeeds.length).toBeGreaterThan(0);
         });
 
     });
