@@ -112,7 +112,7 @@ $(function() {
 
         beforeEach(function(done) {
             loadFeed(0, function() {
-                const initialContent = $('.feed').html();
+                initialContent = $('.feed').html();
 
                 loadFeed(1, done);
             });
