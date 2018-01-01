@@ -30,7 +30,7 @@ The project has the following suites/tests:
 
 1) Get the project files
 
-**1.a: Clone the project**
+**1.a: Clone-method**
 
 Open a command prompt (Windows) or a terminal window (-nix OS) and run:
 
@@ -38,9 +38,9 @@ Open a command prompt (Windows) or a terminal window (-nix OS) and run:
 
 Or: 
 
-**1.b: Download the project**
+**1.b: Download & Unzip-method**
 
-Download it from this link: [https://github.com/alffox/feed-reader-testing/archive/master.zip](https://github.com/alffox/feed-reader-testing/archive/master.zip)
+Download it from this link: [https://github.com/alffox/feed-reader-testing/archive/master.zip](https://github.com/alffox/feed-reader-testing/archive/master.zip) and unzip it to a directory on your local disk
 
 *Note: Both methods are available on the interface if you navigate to https://github.com/alffox/feed-reader-testing and click on the "Clone or Download" green button, on the top-right corner of the git repo*
 
