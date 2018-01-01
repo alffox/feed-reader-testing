@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The scope of this project is a test suite for a web-based application that reads RSS feeds.
+The scope of this project is a **test suite** for a web-based application that reads RSS feeds.
 
 The project has the following suites/tests:
 
@@ -29,13 +29,16 @@ The project has the following suites/tests:
 ## How to run the project ?
 
 1) Get the project files
+
 **1.a: Clone the project**
+
 Open a command prompt (Windows) or a terminal window (-nix OS) and run:
 git clone https://github.com/alffox/feed-reader-testing.git
 
 Or: 
 
 **1.b: Download the project**
+
 Download it from this link: [https://github.com/alffox/feed-reader-testing/archive/master.zip](https://github.com/alffox/feed-reader-testing/archive/master.zip)
 
 *Note: Both methods are available on the interface if you navigate to https://github.com/alffox/feed-reader-testing and click on the "Clone or Download" green button, on the top-right corner of the git repo*
@@ -59,3 +62,5 @@ Third-party library used:
 
  - [jQuery](https://jquery.com/) version **2.1.1**
  - [jasmine-jquery](https://github.com/velesin/jasmine-jquery) version **2.1.1**
+
+

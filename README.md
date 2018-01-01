@@ -33,7 +33,8 @@ The project has the following suites/tests:
 **1.a: Clone the project**
 
 Open a command prompt (Windows) or a terminal window (-nix OS) and run:
-git clone https://github.com/alffox/feed-reader-testing.git
+
+    git clone https://github.com/alffox/feed-reader-testing.git
 
 Or: 
 
@@ -62,5 +63,3 @@ Third-party library used:
 
  - [jQuery](https://jquery.com/) version **2.1.1**
  - [jasmine-jquery](https://github.com/velesin/jasmine-jquery) version **2.1.1**
-
-
